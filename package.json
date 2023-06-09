@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@react-spring/parallax": "^9.7.2",
+    "@react-spring/web": "^9.7.2",
     "axios": "^1.4.0",
     "iconsax-react": "^0.0.8",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.11.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.37",
@@ -29,5 +32,9 @@
     "tailwindcss": "^3.3.2",
     "typescript": "^5.0.2",
     "vite": "^4.3.9"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/Ateriss/isekai.git",
+  "author": "Ateriss <alexandralinares2729@gmail.com>",
+  "license": "MIT"
 }
