@@ -40,7 +40,7 @@ function Header() {
                 to="Catalogo">
                   Catálogo</Link>
                 <ul className={`p-2 transition-all ${catVisible? 'block':'hidden'}`}>
-                  {categories.map((category)=>{
+                  {categories.slice(2,4).map((category)=>{
                   return <li className=" transition-all hover:tracking-widest" key={category} >{category}</li>})}
                 </ul>
               </li>

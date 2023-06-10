@@ -1,5 +1,14 @@
 image{
-    mix-blend-mode: hard-light;
+    mix-blend-mode: difference;
     filter: brightness(1.1);
 
+}
+
+.epa{
+    box-shadow: 2px 1px 15px 2px rgba(0,0,0,0.42);
+}
+
+.stroke{
+    -webkit-text-stroke: 2px black;
+    text-stroke: 2px black;
 }
