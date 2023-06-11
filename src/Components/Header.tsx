@@ -51,8 +51,8 @@ function Header() {
                 <Link to="/"  className=" transition-all hover:tracking-widest">info</Link>
               </li>
             </ul>
-            <div  className=" transition-all hover:tracking-widest" >
-              <p>Iniciar Sesión</p>
+            <div   >
+              <Link to='Login' className=" transition-all hover:tracking-widest">Iniciar Sesión</Link>
             </div>
           </div>
         

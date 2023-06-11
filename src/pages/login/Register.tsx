@@ -3,7 +3,8 @@ import { InputForm } from "../../Components/Form/InputForm"
 import { Title } from "../../Components/Title"
 
 
-function Login(){
+
+function Register(){
     return(
         <section className="w-screen h-screen flex flex-col justify-center items-center text-slate-200">
             
@@ -19,8 +20,8 @@ function Login(){
                 className="bg-slate-800 p-2 rounded-lg m-4 focus:scale-105 active:scale-95">
                     Iniciar sesión</button>
                 <div className=" flex flex-col text-center mt-4 mb-2">
-                    <p>¿No tienes cuenta?</p>
-                    <Link to="Register" className="font-bold">&#8594; Regístrate aquí &#8592; </Link>
+                    <p>¿Ya tienes una cuenta?</p>
+                    <Link to='Login' className="font-bold">&#8594; Inicia sesión aquí &#8592; </Link>
                 </div>
 
             </form>
@@ -29,4 +30,4 @@ function Login(){
     )
 }
 
-export { Login }
+export { Register }
