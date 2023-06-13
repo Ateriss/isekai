@@ -1,7 +1,7 @@
 import { Menu } from "iconsax-react";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { getCategory } from "../services/api";
+import { getData } from "../services/api";
 
 function Header() {
   const [visible, setVisible] = useState(false);
@@ -9,7 +9,7 @@ function Header() {
   const [categories, setCategories] = useState([]);
 
   useEffect(()=>{
-    getCategory(setCategories)
+    getData('categories', setCategories)
   },[])
 
   return (
@@ -40,8 +40,8 @@ function Header() {
                 to="Catalogo">
                   Catálogo</Link>
                 <ul className={`p-2 transition-all ${catVisible? 'block':'hidden'}`}>
-                  {categories.slice(2,4).map((category)=>{
-                  return <li className=" transition-all hover:tracking-widest" key={category} >{category}</li>})}
+                  {categories.map((category)=>{
+                  return <li className=" transition-all hover:tracking-widest" key={category.id} >{category.name}</li>})}
                 </ul>
               </li>
               <li>
@@ -52,7 +52,7 @@ function Header() {
               </li>
             </ul>
             <div   >
-              <Link to='Login' className=" transition-all hover:tracking-widest">Iniciar Sesión</Link>
+              <Link to='login' className=" transition-all hover:tracking-widest">Iniciar Sesión</Link>
             </div>
           </div>
         

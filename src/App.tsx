@@ -5,6 +5,7 @@ import { Header } from "./Components/Header"
 import { Catalog } from "./pages/Catalog/Catalog"
 import { Login } from "./pages/login/Login"
 import { Register } from "./pages/login/Register"
+import { Product } from "./pages/Product.tsx/Product"
 
 
 function App() {
@@ -17,8 +18,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="Catalogo" element={<Catalog/>}/>
+          <Route path="Catalogo/:productId" element={<Product/>}/>
           <Route path="Login" element={<Login/>}/>
-          <Route path="Register" element={<Register/>}/>
+          <Route path="singIn" element={<Register/>}/>
           <Route path="*" element={<>Err 404 Page not Fount </>} />
         </Routes>
         <Footer></Footer>
