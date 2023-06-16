@@ -5,7 +5,7 @@ import { Title } from "../../Components/Title"
 
 function Login(){
     return(
-        <section className="w-screen h-screen flex flex-col justify-center items-center text-slate-200">
+        <section className="w-screen h-screen flex flex-col justify-center items-center text-slate-200 p-2">
             
             <div className="bg-pared-ladrillo  bg-cover  w-screen h-screen fixed -z-50"></div>
             <Title title='Iniciar sesión' />

@@ -3,8 +3,7 @@ import recorte from "../../assets/Recorter feo.png";
 import katana from "../../assets/katanasf.png";
 import katana2 from "../../assets/katanasf2.png";
 import fondoKatana from "../../assets/fondo-katana.png";
-import { Banner } from "./components/Banner";
-import prueba from "../../assets/fondo-feo.png";
+import { Banner } from "./components/Banner";import prueba from "../../assets/fondo-feo.png";
 
 import { Parallax, ParallaxLayer, IParallax } from "@react-spring/parallax";
 import { useRef } from "react";
@@ -17,6 +16,7 @@ function Home() {
       <Parallax ref={parallax} pages={3} style={{ backgroundColor: "black" }}>
         <ParallaxLayer speed={0.5} offset={0} factor={2.5}></ParallaxLayer>
         <ParallaxLayer speed={1} offset={0} factor={1} >
+          <img src="" alt="" />
           <h1 className="w-screen text-center  absolute inset-0 text-white uppercase font-semibold text-2xl mt-12">
             Próximamente
           </h1>

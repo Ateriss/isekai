@@ -32,12 +32,17 @@ export default {
           '50%': {borderRadius: '43% 57% 72% 28% / 65% 73% 27% 35% ' },
           '75%': {borderRadius: '92% 8% 89% 11% / 17% 9% 91% 83%  ' },
         },
+        beat:{
+          '0%, 100%,':{transform: 'scale(1)'},
+          '50%': {transform: 'scale(.9)'}
+        },
 
       },
       animation: {
         spot: 'spot 10s ease-in-out infinite',
         spot2: 'spot2 10s ease-in-out infinite',
         spot3: 'spot3 10s ease-in-out infinite',
+        beat: 'beat 1s ease-in-out infinite'
       }
     },
   },

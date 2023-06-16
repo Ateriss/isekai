@@ -6,6 +6,9 @@ import { Catalog } from "./pages/Catalog/Catalog"
 import { Login } from "./pages/login/Login"
 import { Register } from "./pages/login/Register"
 import { Product } from "./pages/Product.tsx/Product"
+import { User } from "./pages/User/User"
+import { ShoppingCard } from "./pages/ShoppingCard/ShoppingCard"
+
 
 
 function App() {
@@ -21,6 +24,8 @@ function App() {
           <Route path="Catalogo/:productId" element={<Product/>}/>
           <Route path="Login" element={<Login/>}/>
           <Route path="singIn" element={<Register/>}/>
+          <Route path="Deseos" element={<ShoppingCard/>}/>
+          <Route path="User" element={<User/>}/>
           <Route path="*" element={<>Err 404 Page not Fount </>} />
         </Routes>
         <Footer></Footer>

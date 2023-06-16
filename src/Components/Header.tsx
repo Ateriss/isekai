@@ -15,7 +15,7 @@ function Header() {
   return (
     <header 
     onMouseLeave={() => setVisible(false)} 
-    className={` bg-black text-white leading-10 capitalize p-2 fixed z-40 transition-all 
+    className={` bg-black border-b-2 border-r-2 top-0 border-slate-200 text-white leading-10 capitalize p-2 fixed z-40 transition-all 
     ${visible? 'w-2/3': 'rounded-br-xl' } }`}>
       <nav className={`transition-all 
       ${visible? 'h-screen inset-0': '-left-full'}`}>
@@ -23,7 +23,7 @@ function Header() {
           size="24"
           color="#ffffff"
           onClick={() => setVisible(!visible)}
-          className="text-white z-50"
+          className="text-white z-50 "
         />
         <div>
           <h1 className="hidden">Isekai</h1>
