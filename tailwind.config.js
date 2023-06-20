@@ -8,7 +8,10 @@ export default {
     extend: {
       backgroundImage:{
         'pared-ladrillo': 'url(./src/assets/pexels-ready-made-3964674.jpg)',
-        'pared-damage': 'url(./src/assets/pexels-henry-&-co-1901028.jpg)'
+        'pared-damage': 'url(./src/assets/pexels-henry-&-co-1901028.jpg)',
+        'checked': 'url(./src/assets/cheque.png)',
+        'cruz': 'url(./src/assets/cruz.png)'
+      
       },
       fontFamily: {
         Josefin: ['Josefin Sans', 'sans-serif' ]
